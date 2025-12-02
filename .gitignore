@@ -1,0 +1,21 @@
+# Ignore user-secrets and local config files
+# Ignore all appsettings.*.json under MyApi, but allow the example file to be committed
+MyApi/appsettings.*.json
+!MyApi/appsettings.example.json
+MyApi/appsettings.Secrets.json
+MyApi/appsettings.*.Local.json
+
+# dotnet user-secrets stores secrets outside the repo; nothing to ignore for that, but keep local files secret
+
+# Visual Studio / Rider / VSCode files
+.vs/
+.vscode/
+.idea/
+bin/
+obj/
+
+# other
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
